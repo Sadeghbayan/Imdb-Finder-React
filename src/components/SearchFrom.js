@@ -14,10 +14,10 @@ class SearchForm extends Component {
             <div>
                 <Form inline onSubmit={this.props.queryHanlder}>
                     <FormGroup controlId="formInlineName">
-                        <FormControl name="query" type="text" placeholder="Interstellar, Dark Knight, TinTin, ..." />
+                        <FormControl name="query" className="searchBox" type="text" placeholder="Interstellar, Dark Knight, TinTin, ..." />
                     </FormGroup>
                     {' '}
-                    <Button bsStyle="primary" type="submit">Search</Button>
+                    <Button className="search_btn" type="submit">Search</Button>
                 </Form>
             </div>
         );

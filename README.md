@@ -1,4 +1,4 @@
 # Imdb-Finder-React
 
-First Run `Npm Install`
+First Run `npm Install`
 After install dependencies run `npm start`

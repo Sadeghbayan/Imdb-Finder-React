@@ -9,14 +9,27 @@ class App extends Component {
     query: '',
     results: []
   }
+  componentDidMount() {
+    var json = localStorage.getItem('movies');
+    const results = JSON.parse(json);
+    this.setState({
+      results
+    })
+  }
+
   handleSearch = (e) => {
     var query = e.target.elements.query.value;
     var self = this;
     axios.get("http://www.omdbapi.com/?s=" + query + "&page=1&apikey=66ff68e5")
       .then(function (response) {
-        self.setState({
-          results: response.data.Search
-        });
+        if (response.data.Error) {
+          return false;
+        } else {
+          self.setState({
+            results: response.data.Search
+          });
+          localStorage.setItem('movies', JSON.stringify(response.data.Search))
+        }
       })
       .catch(function (error) {
         console.log(error);
@@ -26,24 +39,25 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Jumbotron>
-          <Grid>
-            <h1>Imdb Movie Finder</h1>
-            <p>
-              You Can Easily Search Movies From Imdb Archive.
-            </p>
-          </Grid>
-        </Jumbotron>
+        <div className="header text-center">
+          <h2 className="title">Find Your Favorite Movies</h2>
+          <SearchForm queryHanlder={this.handleSearch} />
+        </div>
         <div className="content">
           <Grid>
-            <SearchForm queryHanlder={this.handleSearch} />
-            <hr />
-            <Row className="show-grid">            
-                {
-                  this.state.results && this.state.results.length > 0 && this.state.results.map(function (result, i) {
-                    return <SearchResult dataResult={result} key={i} />
-                  })
-                }
+            <Row className="show-grid">
+              {
+                this.state.results.length !== 0 && this.state.results.map(function (result, i) {
+                  return <SearchResult dataResult={result} key={i} />
+                })
+              }
+              {
+                this.state.results.length === 0 ? (
+                  <div className="list--empty text-center d-block">
+                    <p>Awww! We don't have the Movie you are looking for.</p>
+                  </div>
+                ) : false
+              }
             </Row>
 
           </Grid>
@@ -52,5 +66,4 @@ class App extends Component {
     )
   }
 }
-
 export default App;
