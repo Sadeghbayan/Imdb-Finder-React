@@ -47,12 +47,12 @@ class App extends Component {
           <Grid>
             <Row className="show-grid">
               {
-                this.state.results.length !== 0 && this.state.results.map(function (result, i) {
+                this.state.results && this.state.results.length !== 0 && this.state.results.map(function (result, i) {
                   return <SearchResult dataResult={result} key={i} />
                 })
               }
               {
-                this.state.results.length === 0 ? (
+                this.state.results && this.state.results.length === 0 ? (
                   <div className="list--empty text-center d-block">
                     <p>Awww! We don't have the Movie you are looking for.</p>
                   </div>
