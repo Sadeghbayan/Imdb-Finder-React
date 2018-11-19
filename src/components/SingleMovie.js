@@ -8,7 +8,13 @@ class SingleMovie extends Component {
         movie: {}
     }
     componentDidMount() {
-        const id = this.props.location.state.movieId;
+        var id = '';
+        if(this.props.location.state){
+            id = this.props.location.state.movieId;
+        }else{
+            id = this.props.match.params.id;
+        }
+        console.log(id)
         var self = this;
         axios.get("http://www.omdbapi.com/?i=" + id + "&page=1&apikey=66ff68e5")
             .then(function (response) {
