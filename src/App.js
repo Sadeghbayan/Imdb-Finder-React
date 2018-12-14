@@ -20,7 +20,7 @@ class App extends Component {
   handleSearch = (e) => {
     var query = e.target.elements.query.value;
     var self = this;
-    axios.get("http://www.omdbapi.com/?s=" + query + "&page=1&apikey=66ff68e5")
+    axios.get("https://www.omdbapi.com/?s=" + query + "&page=1&apikey=66ff68e5")
       .then(function (response) {
         if (response.data.Error) {
           return false;
