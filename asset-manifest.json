@@ -1,7 +1,7 @@
 {
   "main.css": "/Imdb-Finder-React/static/css/main.d9e6d48a.chunk.css",
-  "main.js": "/Imdb-Finder-React/static/js/main.58b2fe92.chunk.js",
-  "main.js.map": "/Imdb-Finder-React/static/js/main.58b2fe92.chunk.js.map",
+  "main.js": "/Imdb-Finder-React/static/js/main.6452dec7.chunk.js",
+  "main.js.map": "/Imdb-Finder-React/static/js/main.6452dec7.chunk.js.map",
   "static/css/1.cc6160d0.chunk.css": "/Imdb-Finder-React/static/css/1.cc6160d0.chunk.css",
   "static/js/1.e5042a8c.chunk.js": "/Imdb-Finder-React/static/js/1.e5042a8c.chunk.js",
   "static/js/1.e5042a8c.chunk.js.map": "/Imdb-Finder-React/static/js/1.e5042a8c.chunk.js.map",
@@ -11,6 +11,6 @@
   "static/css/main.d9e6d48a.chunk.css.map": "/Imdb-Finder-React/static/css/main.d9e6d48a.chunk.css.map",
   "static/css/1.cc6160d0.chunk.css.map": "/Imdb-Finder-React/static/css/1.cc6160d0.chunk.css.map",
   "index.html": "/Imdb-Finder-React/index.html",
-  "precache-manifest.6c5feefb63a44f734aa54dfe53d73d4e.js": "/Imdb-Finder-React/precache-manifest.6c5feefb63a44f734aa54dfe53d73d4e.js",
+  "precache-manifest.9347ee41bbdfaa2718c53914b90306b1.js": "/Imdb-Finder-React/precache-manifest.9347ee41bbdfaa2718c53914b90306b1.js",
   "service-worker.js": "/Imdb-Finder-React/service-worker.js"
 }
