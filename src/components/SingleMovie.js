@@ -16,7 +16,7 @@ class SingleMovie extends Component {
         }
         console.log(id)
         var self = this;
-        axios.get("http://www.omdbapi.com/?i=" + id + "&page=1&apikey=66ff68e5")
+        axios.get("https://www.omdbapi.com/?i=" + id + "&page=1&apikey=66ff68e5")
             .then(function (response) {
                 var movie = response.data
                 self.setState({
