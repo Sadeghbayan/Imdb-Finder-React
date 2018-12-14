@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/[your-user-name].github.io/Imdb-Finder-React/precache-manifest.d55508355a89998c05b38fe939b93306.js"
+  "/Imdb-Finder-React/precache-manifest.f2ba16aea1bd2abd680f14e7ea33b4c4.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/[your-user-name].github.io/Imdb-Finder-React/index.html", {
+workbox.routing.registerNavigationRoute("/Imdb-Finder-React/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
