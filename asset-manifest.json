@@ -1,16 +1,16 @@
 {
   "main.css": "/Imdb-Finder-React/static/css/main.d9e6d48a.chunk.css",
-  "main.js": "/Imdb-Finder-React/static/js/main.ea8181ae.chunk.js",
-  "main.js.map": "/Imdb-Finder-React/static/js/main.ea8181ae.chunk.js.map",
+  "main.js": "/Imdb-Finder-React/static/js/main.55bcba68.chunk.js",
+  "main.js.map": "/Imdb-Finder-React/static/js/main.55bcba68.chunk.js.map",
   "static/css/1.cc6160d0.chunk.css": "/Imdb-Finder-React/static/css/1.cc6160d0.chunk.css",
-  "static/js/1.0d5f715e.chunk.js": "/Imdb-Finder-React/static/js/1.0d5f715e.chunk.js",
-  "static/js/1.0d5f715e.chunk.js.map": "/Imdb-Finder-React/static/js/1.0d5f715e.chunk.js.map",
+  "static/js/1.e5042a8c.chunk.js": "/Imdb-Finder-React/static/js/1.e5042a8c.chunk.js",
+  "static/js/1.e5042a8c.chunk.js.map": "/Imdb-Finder-React/static/js/1.e5042a8c.chunk.js.map",
   "runtime~main.js": "/Imdb-Finder-React/static/js/runtime~main.1ab0363c.js",
   "runtime~main.js.map": "/Imdb-Finder-React/static/js/runtime~main.1ab0363c.js.map",
   "static/media/index.css": "/Imdb-Finder-React/static/media/poster.c7421205.jpg",
   "static/css/main.d9e6d48a.chunk.css.map": "/Imdb-Finder-React/static/css/main.d9e6d48a.chunk.css.map",
   "static/css/1.cc6160d0.chunk.css.map": "/Imdb-Finder-React/static/css/1.cc6160d0.chunk.css.map",
   "index.html": "/Imdb-Finder-React/index.html",
-  "precache-manifest.c35aff82a90788a50a643267038abf3b.js": "/Imdb-Finder-React/precache-manifest.c35aff82a90788a50a643267038abf3b.js",
+  "precache-manifest.a90d40be773db49438eb2785d9b19f7a.js": "/Imdb-Finder-React/precache-manifest.a90d40be773db49438eb2785d9b19f7a.js",
   "service-worker.js": "/Imdb-Finder-React/service-worker.js"
 }
